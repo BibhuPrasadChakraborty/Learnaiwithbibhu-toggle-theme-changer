@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle theme changer</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="default_theme">
+    <h1>Light Theme</h1>
+    <button id="change_btn">Change Theme</button>
+
+
+    <script>
+        const button = document.querySelector("#change_btn");
+        const body= document.querySelector("body");
+
+        button.addEventListener("click",(evt)=>{
+            evt.preventDefault();
+            body.classList.toggle("default_theme");
+        })
+    </script>
+</body>
+</html>
